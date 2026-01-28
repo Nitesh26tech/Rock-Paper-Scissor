@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #ffffff;
+    width: 380px;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.container h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.choice {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(145deg, #f1f1f1, #e1e1e1);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 12px #cfcfcf,
+}
+
+.choice span {
+    font-size: 34px;
+    margin-top: 6px;
+}
+
+.choice p {
+    font-weight: 600;
+    color: #444;
+    font-size: 14px;
+}
+
+.choice:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+
+.choice:hover p {
+    color: #fff;
+}
+
+.result-box {
+    background: #f7f7f7;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: inset 3px 3px 6px #d1d1d1,
+}
+
+.result-box p {
+    font-size: 15px;
+    margin: 8px 0;
+    color: #444;
+}
+
+#result {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d2671;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 15px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.score {
+    text-align: center;
+}
+
+.score p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.score span {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#roundInfo {
+    margin: 12px 0;
+    font-weight: 600;
+    color: #333;
+}
+
+#resetBtn {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+
+#resetBtn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+    .container {
+        width: 90%;
+    }
+
+    .choice {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* 🎮 Built a Rock–Paper–Scissors game using HTML, CSS & JavaScript!
+Includes score tracking, 10-round limit & winner declaration.
+Learning by building 🚀
+
+#JavaScript #WebDevelopment #MiniProject #LearningByDoing */
